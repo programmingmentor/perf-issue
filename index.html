@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Product List</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search by name...">
+            <select id="category">
+                <option value="">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+            <select id="sort">
+                <option value="asc">Price: Low to High</option>
+                <option value="desc">Price: High to Low</option>
+            </select>
+        </div>
+        <div id="cheapest-product"></div>
+        <div id="product-list"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
